@@ -1,0 +1,49 @@
+html {
+    background-color: #000;
+    overflow: hidden;
+}
+
+#text-holder {
+    font-family: monospace;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.text {
+    color: #00FF00;
+    text-shadow: 0 0 12px #00FF00;
+}
+
+.red {
+    color: #FF4444;
+    text-shadow: 0 0 12px #FF4444;
+}
+
+.cursor {
+    animation: blinker 0.5s step-start infinite;
+}
+
+@keyframes blinker {
+    0% {
+	opacity: 1;
+    }
+    50% {
+	opacity: 0;
+    }
+}
+@-webkit-keyframes blinker {
+    0% {
+	opacity: 1;
+    }
+    50% {
+	opacity: 0;
+    }
+}
+@-moz-keyframes blinker {
+    0% {
+	opacity: 1;
+    }
+    50% {
+	opacity: 0;
+    }
+}
